@@ -2,11 +2,14 @@
   "name": "cursed-times",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
-    "dev": "env -u NODE_OPTIONS node --no-webstorage ./node_modules/next/dist/bin/next dev",
-    "build": "env -u NODE_OPTIONS node --no-webstorage ./node_modules/next/dist/bin/next build",
-    "start": "env -u NODE_OPTIONS node --no-webstorage ./node_modules/next/dist/bin/next start",
-    "lint": "env -u NODE_OPTIONS node --no-webstorage ./node_modules/next/dist/bin/next lint",
+    "dev": "env -u NODE_OPTIONS next dev",
+    "build": "env -u NODE_OPTIONS next build",
+    "start": "env -u NODE_OPTIONS next start",
+    "lint": "env -u NODE_OPTIONS next lint",
     "precompute:today": "curl -s \"http://localhost:3000/api/precompute${PRECOMPUTE_SECRET:+?secret=$PRECOMPUTE_SECRET}\""
   },
   "dependencies": {
