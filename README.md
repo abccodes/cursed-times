@@ -45,16 +45,4 @@ The frontend mostly consumes a ready-to-render edition JSON object. Layout logic
 
 This means cached editions and raw NYT data are shared across all users, so repeat traffic does not keep hitting NYT directly.
 
-## Precompute
-
-`GET /api/precompute` warms the common years for the current day ahead of traffic. In production, this route is intended to be called by Vercel Cron and protected with `CRON_SECRET`.
-
-## Vercel deployment
-
-Set these environment variables on Vercel:
-
-- `NYT_ARCHIVE_API_KEY`
-- `BLOB_READ_WRITE_TOKEN`
-- `CRON_SECRET`
-
-`vercel.json` includes a daily cron job that warms the common editions for the current day.
+`GET /api/precompute` warms the common years for the current day ahead of traffic.
