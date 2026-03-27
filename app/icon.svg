@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="512" height="512" viewBox="0 0 512 512"
+     role="img" aria-label="The Cursed Times icon">
+  <title>The Cursed Times favicon</title>
+  <defs>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Transparent background -->
+  <g filter="url(#softShadow)">
+    <!-- Outer ornamental C -->
+    <path d="
+      M 338 82
+      C 305 66, 268 58, 227 60
+      C 172 63, 126 86, 93 129
+      C 61 171, 47 220, 50 273
+      C 53 330, 73 378, 111 417
+      C 148 455, 198 474, 255 471
+      C 297 469, 334 456, 364 433
+      L 338 389
+      C 312 409, 285 420, 253 422
+      C 213 425, 178 412, 152 386
+      C 124 358, 109 320, 106 273
+      C 103 226, 114 187, 140 157
+      C 166 127, 201 111, 243 108
+      C 273 106, 300 112, 325 124
+      Z
+
+      M 352 87
+      C 378 99, 398 116, 412 139
+      L 386 158
+      C 374 141, 359 129, 339 120
+      Z
+    "
+    fill="#ffffff"/>
+
+    <!-- Inner blackletter spine / counters -->
+    <path d="
+      M 240 130
+      C 261 130, 279 137, 292 150
+      C 304 162, 310 177, 310 196
+      L 310 318
+      C 310 332, 318 339, 333 339
+      L 333 364
+      L 227 364
+      L 227 339
+      C 244 339, 252 332, 252 318
+      L 252 188
+      C 252 178, 249 170, 243 166
+      C 236 161, 226 159, 214 159
+      L 214 130
+      Z
+    " fill="#ffffff"/>
+
+    <!-- Decorative top flourish -->
+    <path d="
+      M 171 108
+      C 188 84, 214 70, 247 66
+      C 274 63, 302 67, 325 79
+      C 345 89, 357 103, 360 120
+      C 363 134, 357 146, 345 151
+      C 333 156, 320 152, 315 143
+      C 311 135, 313 127, 321 120
+      C 299 108, 272 102, 241 105
+      C 215 107, 192 117, 171 135
+      Z
+    " fill="#ffffff"/>
+
+    <!-- Diamond ornament -->
+    <path d="M 312 235 L 330 253 L 312 271 L 294 253 Z" fill="#ffffff"/>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+{
+  "name": "cursed-times",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "env -u NODE_OPTIONS node --no-webstorage ./node_modules/next/dist/bin/next dev",
+    "build": "env -u NODE_OPTIONS node --no-webstorage ./node_modules/next/dist/bin/next build",
+    "start": "env -u NODE_OPTIONS node --no-webstorage ./node_modules/next/dist/bin/next start",
+    "lint": "env -u NODE_OPTIONS node --no-webstorage ./node_modules/next/dist/bin/next lint",
+    "precompute:today": "curl -s \"http://localhost:3000/api/precompute${PRECOMPUTE_SECRET:+?secret=$PRECOMPUTE_SECRET}\""
+  },
+  "dependencies": {
+    "@fontsource/unifrakturcook": "^5.2.8",
+    "@fontsource/unifrakturmaguntia": "^5.2.8",
+    "@vercel/blob": "^2.3.1",
+    "clsx": "^2.1.1",
+    "next": "15.3.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.4",
+    "@types/node": "^22.14.1",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.5",
+    "tailwindcss": "^4.1.4",
+    "typescript": "^5.8.3"
+  }
+}
