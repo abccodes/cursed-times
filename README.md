@@ -18,13 +18,6 @@ The goal is to make recent history feel immediate, uncanny, and oddly current.
 
 ![The Cursed Times homepage example](./docs/homepage-example.png)
 
-## Local development
-
-1. Install dependencies with `npm install`
-2. Copy `.env.example` to `.env.local`
-3. Add `NYT_ARCHIVE_API_KEY` if available
-4. Run `npm run dev`
-
 ## Architecture Overview
 
 At request time, the app computes the target historical date from today's date and the selected year. It then tries to load a fully rendered edition payload from cache before doing any live NYT work.
