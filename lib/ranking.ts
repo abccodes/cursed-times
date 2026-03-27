@@ -1,5 +1,11 @@
 import type { ArchiveArticle, SectionBlock, StoryCard } from "@/lib/types";
 
+const publishedLabelFormatter = new Intl.DateTimeFormat("en-US", {
+  month: "short",
+  day: "numeric",
+  timeZone: "UTC",
+});
+
 const SECTION_PRIORITY: Record<string, number> = {
   World: 28,
   "U.S.": 26,
@@ -185,8 +191,6 @@ function toStoryCard(article: ArchiveArticle, score: number, _index: number): St
 }
 
 function formatPublishedLabel(publishedAt: string) {
-  return new Intl.DateTimeFormat("en-US", {
-    month: "short",
-    day: "numeric",
-  }).format(new Date(publishedAt));
+  const isoDate = publishedAt.slice(0, 10);
+  return publishedLabelFormatter.format(new Date(`${isoDate}T12:00:00Z`));
 }
